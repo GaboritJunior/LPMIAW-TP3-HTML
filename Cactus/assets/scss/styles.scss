@@ -1,0 +1,67 @@
+@import 'mixins';
+@import 'color';
+@import 'reset';
+@import 'base';
+@import 'starter';
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+.main {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background: #1d1363;
+
+    .main__titre {
+
+        font-family: 'fira sans', sans-serif;
+        color: #1d1363;
+        background: #3de073;
+        line-height: 10vh;
+        width: 100%;
+        text-align: center;
+        font-size: 2em;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        .titre__cactus {
+
+            color: #FFF;
+
+        }
+
+    }
+
+    .main__accroche {
+
+        font-family: 'fira sans', sans-serif;
+        font-size: 5rem;
+        text-transform: uppercase;
+        color: #FFF;
+
+        .accroche__retourLigne {
+
+            display: block;
+
+            .retourLigne__creativite {
+
+                color: #3de073;
+
+            }
+
+        }
+
+    }
+
+    .main__chevron {
+
+        color: #3de073;
+        font-size: 3em;
+        
+    }
+
+}

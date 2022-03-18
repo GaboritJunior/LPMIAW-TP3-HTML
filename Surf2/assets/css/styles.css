@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Regles generales */
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  /* 14px par défaut */
+  /*font-family: 'Noto sans', sans-serif;*/
+}
+
+a, a:hover, a:visited {
+  /* ATTENTION LES LIENS SONT BLANC DANS CE MODELE*/
+  color: #FFF;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/*******************************/
+/* Starter: Prsentation       */
+/*****************************/
+.presentation {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.presentation h1 {
+  font-size: 8rem;
+  padding-bottom: 10rem;
+}
+
+/********************/
+/* HEADER:         */
+/******************/
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .main__titre {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+.main .main__liste {
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+.main .main__liste .liste__li {
+  flex-basis: 30%;
+  cursor: pointer;
+}
+.main .main__liste .liste__li .li__description {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  color: #787878;
+  line-height: 1.4;
+  padding: 20px;
+}
+.main .main__liste .liste__li:hover {
+  box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.2);
+}
+.main .main__liste .liste__li:hover .li__description {
+  color: #0022ff;
+}
+.main .main__button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background: #00b0ff;
+  padding: 20px 40px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.main .main__croix {
+  padding-bottom: 30px;
+  font-size: 1.4em;
+}
+
+.second {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 75px;
+}
+.second .second__figure {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 22%;
+  margin: -10px;
+  padding: 40px;
+  background: #eee;
+  box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.second .second__figure .figure__image {
+  width: 100px;
+}
+.second .second__figure .figure__figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.second .second__figure .figure__figcaption .figcaption__nom {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 1.4em;
+  color: #00b0ff;
+  font-family: "Montserrat", sans-serif;
+}
+.second .second__figure .figure__figcaption .figcaption__reseaux, .second .second__figure .figure__figcaption .figcaption__pays {
+  font-family: "Raleway", sans-serif;
+  color: #787878;
+}
+.second .second__figure .figure__figcaption .figcaption__chevron {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.second .second__figure .figure__figcaption .figcaption__pays {
+  color: #787878;
+}
+.second .second__figure .figure__figcaption .figcaption__pays .pays__map {
+  color: #c5c5c5;
+  padding-right: 5px;
+}
+.second .second__figure--13 {
+  z-index: 500;
+  margin-bottom: 50px;
+}
+.second .second__figure--24 {
+  z-index: 1000;
+}
+.second .second__figure--bleu {
+  background: #00b0ff;
+}
+.second .second__figure--bleu .figcaption__nom--bleu {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 1.4em;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+.second .second__figure--bleu .figcaption__chevron {
+  color: #0022ff;
+}
+.second .second__figure--bleu .figcaption__pays--bleu,
+.second .second__figure--bleu .figcaption__reseaux--bleu {
+  font-family: "Raleway", sans-serif;
+  color: #e1e1e1;
+}
+.second .second__figure--bleu .pays__map {
+  color: #c5c5c5;
+  padding-right: 5px;
+}

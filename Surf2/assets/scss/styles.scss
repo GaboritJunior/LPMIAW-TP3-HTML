@@ -1,0 +1,212 @@
+@import 'mixins';
+@import 'color';
+@import 'reset';
+@import 'base';
+@import 'starter';
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .main__titre {
+
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        padding-top: 25px;
+        padding-bottom: 10px;
+
+    }
+
+    .main__liste {
+
+        max-width: 900px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom:25px ;
+
+        .liste__li {
+
+            flex-basis: 30%;
+            cursor: pointer;
+
+            .li__description {
+
+                font-family: 'Raleway', sans-serif;
+                font-size: 1.6rem;
+                color: #787878;
+                line-height: 1.4;
+                padding: 20px;
+
+            }
+
+        }
+
+        .liste__li:hover {
+
+            box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.2);
+
+            .li__description {
+            
+                color: #0022ff;
+            
+            }
+        
+        }
+          
+    }
+
+    .main__button {
+
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        background: #00b0ff;
+        padding: 20px 40px;
+        letter-spacing: 2px;
+        font-weight: 700 ;
+    
+    }
+      
+    .main__croix {
+    
+        padding-bottom: 30px;
+        font-size: 1.4em;
+    
+    }
+
+}
+
+.second {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 75px;
+
+    .second__figure {
+    
+        max-width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 22%;
+        margin: -10px;
+        padding: 40px;
+        background: #eee;
+        box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        border-radius: 5px;
+
+        .figure__image {
+
+            width: 100px;
+
+        }
+
+        .figure__figcaption {
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .figcaption__nom {
+            
+                padding-top: 10px;
+                padding-bottom: 5px;
+                font-size: 1.4em ;
+                color: #00b0ff;
+                font-family: 'Montserrat', sans-serif;
+            
+            }
+
+            .figcaption__reseaux, .figcaption__pays {
+
+                font-family: 'Raleway', sans-serif;
+                color: #787878;
+            
+            }
+
+            .figcaption__chevron {
+            
+                padding-top: 10px;
+                padding-bottom: 10px;
+            
+            }
+
+            .figcaption__pays {
+            
+                color: #787878;
+
+                .pays__map {
+                
+                    color: #c5c5c5;
+                    padding-right: 5px;
+                
+                }
+            
+            }
+        
+        }
+    
+    }
+
+    .second__figure--13 {
+    
+        z-index: 500;
+        margin-bottom: 50px ;
+    
+    }
+
+    .second__figure--24 {
+    
+        z-index: 1000;
+    
+    }
+
+    .second__figure--bleu {
+    
+        background: #00b0ff;
+
+        .figcaption__nom--bleu {
+
+            padding-top: 10px;
+            padding-bottom: 5px;
+            font-size: 1.4em ;
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+        
+        }
+
+        .figcaption__chevron {
+        
+            color: #0022ff;
+        
+        }
+
+        .figcaption__pays--bleu,
+        .figcaption__reseaux--bleu {
+
+            font-family: 'Raleway', sans-serif;
+            color: #e1e1e1;
+        }
+
+        .pays__map {
+                
+            color: #c5c5c5;
+            padding-right: 5px;
+        
+        }
+    
+    }
+
+}
